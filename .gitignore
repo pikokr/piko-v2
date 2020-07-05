@@ -2,6 +2,7 @@
 ### Node template
 # Logs
 config/bot.js
+config/database.js
 logs
 *.log
 npm-debug.log*

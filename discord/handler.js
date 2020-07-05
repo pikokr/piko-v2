@@ -25,7 +25,14 @@ async function handler(client, msg) {
             return msg.channel.send('이 채널에서는 명령어를 사용할 수 없어요!')
         }
         cmds.forEach(command => {
-            command.exec(msg, client, args)
+            if (command.permissions && msg.member) {
+                command.permissions.forEach(perm => {
+                    if (!msg.member.hasPermission(perm)) {
+                        return msg.chanenl.send('이 작업을 실행할 권한이 없습니다.')
+                    }
+                })
+                command.exec(msg, client, args)
+            }
         })
     }
 }

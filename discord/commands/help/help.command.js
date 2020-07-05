@@ -11,6 +11,7 @@ async function help(msg, client, args) {
         embed.addFields([
             {name: '관리 기능', value: '피코야 도움말 관리', inline: true},
             {name: '놀이 기능', value: '피코야 도움말 놀이', inline: true},
+            {name: '번역 기능', value: '피코야 도움말 번역', inline: true},
         ])
         embed.setFooter(msg.author.tag, msg.author.avatarURL())
         return msg.channel.send(embed)
