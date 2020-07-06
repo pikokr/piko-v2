@@ -9,6 +9,8 @@ const client = new Client(config.bot.options)
 const utils = require('../utils')
 const knex = utils.database
 
+global.fetch = require('node-fetch')
+
 client.on('ready', async () => {
     if (!client.shard) {
         console.error('shard only')

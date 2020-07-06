@@ -15,5 +15,12 @@ groups.push(
         commands: [require('./translate/ko')]
     }
 )
+groups.push(
+    {
+        namespace: 'covid',
+        name: '코로나',
+        commands: [require('./covid/status'), require('./test')]
+    }
+)
 
 module.exports = groups

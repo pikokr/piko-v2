@@ -19,7 +19,7 @@ async function handler(client, msg) {
             }
         })
     })
-    const cmds = commands.filter(r => r.name.startsWith(cmd))
+    const cmds = commands.filter(r => r.name === cmd)
     if (cmds.length !== 0) {
         if (msg.channel.topic && msg.channel.topic.includes('-명령어금지')) {
             return msg.channel.send('이 채널에서는 명령어를 사용할 수 없어요!')
@@ -31,8 +31,9 @@ async function handler(client, msg) {
                         return msg.chanenl.send('이 작업을 실행할 권한이 없습니다.')
                     }
                 })
-                command.exec(msg, client, args)
             }
+            console.log(`[EXEC] ${command.exec.name}`)
+            command.exec(msg, client, args)
         })
     }
 }
