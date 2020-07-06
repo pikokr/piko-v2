@@ -1,4 +1,3 @@
-const discord = require('discord.js')
 const embedBase = require('../../utils/embed').baseEmbed
 const helps = require('./helps')
 

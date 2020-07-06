@@ -1,6 +1,7 @@
 const baseEmbed = require('../../utils/embed').baseEmbed
+const fetch = require('node-fetch')
 
-async function covidStats(msg, client, args) {
+async function covidStats(msg) {
     const res = (await (await fetch('http://api.corona-19.kr/korea/?serviceKey=7a6b9040c3bf46a565e875fa3721a4587')).json())
     const embed = baseEmbed()
     embed.setAuthor(msg.author.tag, msg.author.avatarURL())

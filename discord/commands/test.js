@@ -15,7 +15,7 @@ const canvasRenderService = new CanvasRenderService(width, height, chartCallback
 module.exports = {
     name: '테스트',
     aliases: [],
-    exec: async function (msg, client, args) {
+    exec: async function (msg) {
         const configuration = {
             type: 'bar',
             data: {
