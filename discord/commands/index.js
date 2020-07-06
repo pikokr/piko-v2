@@ -19,7 +19,7 @@ groups.push(
     {
         namespace: 'covid',
         name: '코로나',
-        commands: [require('./covid/status'), require('./test')]
+        commands: [require('./covid/status')]
     }
 )
 

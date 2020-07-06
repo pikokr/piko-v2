@@ -27,6 +27,8 @@
     "eslint": "^7.4.0"
   },
   "scripts": {
-    "eslint:github-action": "eslint ."
+    "eslint:github-action": "eslint .",
+    "lint": "eslint . && node .",
+    "dev": "nodemon --exec npm run lint"
   }
 }
