@@ -1,4 +1,4 @@
-name: Run ESLint on Pull Requests
+name: ESLint
 
 on:
   - pull_request
