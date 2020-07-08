@@ -22,5 +22,10 @@ groups.push(
         commands: [require('./covid/status')]
     }
 )
+groups.push({
+    namespace: 'math',
+    name: '수학',
+    commands: [require('./math/prime')]
+})
 
 module.exports = groups
