@@ -6,7 +6,7 @@
   "dependencies": {
     "@k3rn31p4nic/google-translate-api": "^1.1.1",
     "canvas": "^2.6.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs-node-canvas": "^3.0.6",
     "debug": "^4.1.1",
     "discord.js": "^12.2.0",
